@@ -15,10 +15,11 @@ script:
   #SONAR
   - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=iwvg-upm -Dsonar.login=$SONAR
   #Deploy https://carlos-castro-g-ecosystem.herokuapp.com/api
-  deploy:
-    provider: heroku
-    api_key:
-      secure: $HEROKU
-    on:
-      branch: master
-    app: carlos-castro-g-ecosystem
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU
+  on:
+    branch: master
+  app: carlos-castro-g-ecosystem
