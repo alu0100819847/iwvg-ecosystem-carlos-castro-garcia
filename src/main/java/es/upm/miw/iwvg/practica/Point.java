@@ -1,4 +1,4 @@
-package practica;
+package es.upm.miw.iwvg.practica;
 
 public class Point {
 
