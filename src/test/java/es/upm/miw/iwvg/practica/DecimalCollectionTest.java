@@ -60,4 +60,14 @@ class DecimalCollectionTest {
     void testMinimumArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().min());
     }
+
+    @Test
+    void testAverage() {
+        assertEquals(1.5, this.decimalCollection.average(), 10e-5);
+    }
+
+    @Test
+    void testAverageArithmeticExceptionIfEmpty() {
+        assertThrows(ArithmeticException.class, () -> new DecimalCollection().average());
+    }
 }
