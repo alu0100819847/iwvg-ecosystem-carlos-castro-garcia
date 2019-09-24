@@ -27,8 +27,8 @@ public class Fraction {
         return denominator;
     }
 
-    public boolean isPropia(){
-        if(this.numerator < this.denominator){
+    public boolean isPropia() {
+        if (this.numerator < this.denominator) {
             return true;
         } else {
             return false;
@@ -50,5 +50,13 @@ public class Fraction {
             return false;
         }
     }
-
+    public Fraction sum(Fraction fraction){
+        if(this.denominator == fraction.getDenominator()){
+            return new Fraction(this.numerator + fraction.getNumerator(), this.denominator);
+        }
+        int numeratorThis = this.numerator * fraction.getDenominator();
+        int numeratorFraction = fraction.numerator * this.getDenominator();
+        int denominator = this.denominator * fraction.getDenominator();
+        return new Fraction(numeratorThis + numeratorFraction, denominator);
+    }
 }

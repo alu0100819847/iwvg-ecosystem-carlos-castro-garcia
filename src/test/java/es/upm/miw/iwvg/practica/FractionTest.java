@@ -43,7 +43,6 @@ public class FractionTest {
 
     @Test
     void testIsPropia() {
-
         assertEquals(false, fraction.isPropia());
         Fraction fraction = new Fraction(5, 7);
         assertEquals(true, fraction.isPropia());
@@ -51,7 +50,6 @@ public class FractionTest {
 
     @Test
     void testIsImpropia() {
-
         assertEquals(true, fraction.isImpropia());
         Fraction fraction = new Fraction(5, 7);
         assertEquals(false, fraction.isImpropia());
@@ -59,9 +57,17 @@ public class FractionTest {
 
     @Test
     void testIsEquivalent() {
-
         assertEquals(true, fraction.isEquivalent(new Fraction(10, 14)));
+    }
+    @Test
+    void testSum() {
+        Fraction fraction = this.fraction.sum(new Fraction(1, 7));
+        assertEquals(true, fraction.isEquivalent(new Fraction(6, 7)) );
+
+        fraction = this.fraction.sum(new Fraction(2, 14));
+        assertEquals(true, fraction.isEquivalent(new Fraction(6, 7)) );
 
     }
+
 
 }
