@@ -42,4 +42,7 @@ public class User {
         return this.familyName;
     }
 
+    public String alternativeFullName() {
+        return this.familyName+ ", " +this.name ;
+    }
 }
