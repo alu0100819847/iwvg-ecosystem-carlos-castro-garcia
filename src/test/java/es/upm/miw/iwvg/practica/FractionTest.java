@@ -41,5 +41,19 @@ public class FractionTest {
         assertEquals(5, fraction.getDenominator());
     }
 
+    @Test
+    void testIsPropia() {
 
+        assertEquals(false, fraction.isPropia());
+        Fraction fraction = new Fraction(5, 7);
+        assertEquals(true, fraction.isPropia());
+    }
+
+    @Test
+    void testIsImpropia() {
+
+        assertEquals(true, fraction.isImpropia());
+        Fraction fraction = new Fraction(5, 7);
+        assertEquals(false, fraction.isImpropia());
+    }
 }

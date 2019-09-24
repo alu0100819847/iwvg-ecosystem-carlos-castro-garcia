@@ -27,4 +27,20 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isPropia(){
+        if(this.numerator < this.denominator){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isImpropia(){
+        if(this.numerator > this.denominator){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
