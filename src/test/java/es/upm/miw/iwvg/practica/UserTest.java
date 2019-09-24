@@ -58,4 +58,10 @@ public class UserTest {
 
     }
 
+    @Test
+    void testGetUpperCaseName() {
+        assertEquals("CARLOS", user.getUpperCaseName());
+        assertNotEquals("carlos", user.getUpperCaseName());
+    }
+
 }
