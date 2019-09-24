@@ -58,4 +58,15 @@ public class UserTest {
 
     }
 
+    @Test
+    void testGetUpperCaseName() {
+        assertEquals("CARLOS", user.getUpperCaseName());
+        assertNotEquals("carlos", user.getUpperCaseName());
+    }
+
+    @Test
+    void testAlternativeFullName() {
+        assertEquals("Castro, Carlos", user.alternativeFullName());
+        assertNotEquals("Carlos Castro", user.alternativeFullName());
+    }
 }
