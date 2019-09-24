@@ -68,4 +68,10 @@ class PointTest {
         assertEquals(2, point.getX());
         assertEquals(9, point.getY());
     }
+
+    @Test
+    void testEqual() {
+        assertEquals(true, point.equal(new Point(2, 3)));
+        assertEquals(false, point.equal(new Point(3, 2)));
+    }
 }

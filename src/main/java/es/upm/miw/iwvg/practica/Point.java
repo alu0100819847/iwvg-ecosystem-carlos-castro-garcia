@@ -48,6 +48,14 @@ public class Point {
         this.y = y;
     }
 
+    public boolean equal(Point point){
+        if(this.x == point.getX() && this.y == point.getY()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public String toString() {
         return "Point{" +
