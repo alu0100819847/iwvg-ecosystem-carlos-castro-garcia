@@ -43,4 +43,12 @@ public class Fraction {
         }
     }
 
+    public boolean isEquivalent(Fraction fraction){
+        if((this.getNumerator() * fraction.getDenominator()) == (this.getNumerator() * fraction.getDenominator())){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

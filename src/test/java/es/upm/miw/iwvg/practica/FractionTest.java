@@ -56,4 +56,12 @@ public class FractionTest {
         Fraction fraction = new Fraction(5, 7);
         assertEquals(false, fraction.isImpropia());
     }
+
+    @Test
+    void testIsEquivalent() {
+
+        assertEquals(true, fraction.isEquivalent(new Fraction(10, 14)));
+
+    }
+
 }
