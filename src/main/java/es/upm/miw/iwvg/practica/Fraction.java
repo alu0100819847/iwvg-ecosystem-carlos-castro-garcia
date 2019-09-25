@@ -44,11 +44,15 @@ public class Fraction {
     }
 
     public boolean isEquivalent(Fraction fraction){
-        if((this.getNumerator() * fraction.getDenominator()) == (this.getNumerator() * fraction.getDenominator())){
+
+        System.out.println(this.getNumerator() +" , "+ fraction.getDenominator());
+        System.out.println(this.getDenominator());
+        System.out.println(fraction.getNumerator());
+        System.out.println(this.getDenominator() * fraction.getNumerator());
+        if((this.getNumerator() * fraction.getDenominator()) == (this.getDenominator() * fraction.getNumerator())){
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
     public Fraction sum(Fraction fraction){
         if(this.denominator == fraction.getDenominator()){
