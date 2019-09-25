@@ -45,22 +45,9 @@ public class Fraction {
 
     public boolean isEquivalent(Fraction fraction){
 
-        System.out.println(this.getNumerator() +" , "+ fraction.getDenominator());
-        System.out.println(this.getDenominator());
-        System.out.println(fraction.getNumerator());
-        System.out.println(this.getDenominator() * fraction.getNumerator());
         if((this.getNumerator() * fraction.getDenominator()) == (this.getDenominator() * fraction.getNumerator())){
             return true;
         }
         return false;
-    }
-    public Fraction sum(Fraction fraction){
-        if(this.denominator == fraction.getDenominator()){
-            return new Fraction(this.numerator + fraction.getNumerator(), this.denominator);
-        }
-        int numeratorThis = this.numerator * fraction.getDenominator();
-        int numeratorFraction = fraction.numerator * this.getDenominator();
-        int denominator = this.denominator * fraction.getDenominator();
-        return new Fraction(numeratorThis + numeratorFraction, denominator);
     }
 }
