@@ -48,7 +48,7 @@ public class Point {
         this.y = y;
     }
 
-    public boolean equal(Point point){
+    public boolean isEqual(Point point){
         if(this.x == point.getX() && this.y == point.getY()){
             return true;
         } else {
