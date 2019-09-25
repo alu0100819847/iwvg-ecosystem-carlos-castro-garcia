@@ -57,15 +57,15 @@ public class FractionTest {
 
     @Test
     void testIsEquivalent() {
-        assertEquals(true, fraction.isEquivalent(new Fraction(10, 14)));
+        assertEquals(true, fraction.isEquivalent(new Fraction(14, 10)));
     }
     @Test
     void testSum() {
-        Fraction fraction = this.fraction.sum(new Fraction(1, 7));
-        assertEquals(true, fraction.isEquivalent(new Fraction(6, 7)) );
+        Fraction fraction = this.fraction.sum(new Fraction(3, 5));
+        assertEquals(true, fraction.isEquivalent(new Fraction(10, 5)) );
 
-        fraction = this.fraction.sum(new Fraction(2, 14));
-        assertEquals(true, fraction.isEquivalent(new Fraction(6, 7)) );
+        fraction = this.fraction.sum(new Fraction(6, 10));
+        assertEquals(true, fraction.isEquivalent(new Fraction(10, 5)) );
 
     }
 
